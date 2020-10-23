@@ -9,6 +9,21 @@ const SubItemList = ({ subItem }) => {
         display: "flex",
     }
 
+    const delPrice = {
+        color: "gray",
+        display: "inline-block"
+    }
+
+    const currPrice = {
+        color: "red",
+        display:"inline-block",
+        marginRight:"10px"
+    }
+
+    const price = {
+        display:"inline-block"
+    }
+
     return (
         <>
             <div style={subItemList}>
@@ -21,7 +36,10 @@ const SubItemList = ({ subItem }) => {
                                 src={subItem.img}
                             />
                             <p>{subItem.title}</p>
-                            <p>{subItem.price}</p>
+                            <div style={price}>
+                                <p style={currPrice}>${subItem.price}</p>
+                                <del style={delPrice}>${subItem.o_price}</del>
+                            </div>
                         </div>
 
                     ))}
