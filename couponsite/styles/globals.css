@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.subItem {
+  max-width: 30%;
+  transition: transform 250ms;
+  display: flex;
+  flex-direction: column
+}
+
+.subItem:hover {
+  transform: scale(1.02)
+}
+
