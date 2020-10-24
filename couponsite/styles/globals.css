@@ -17,12 +17,13 @@ a {
 
 .subItem {
   max-width: 30%;
-  transition: transform 250ms;
+  transition: transform 150ms;
   display: flex;
   flex-direction: column
 }
 
 .subItem:hover {
-  transform: scale(1.02)
+	box-shadow: gray 0px 0px 10px;
+	opacity: 0.9;
 }
 

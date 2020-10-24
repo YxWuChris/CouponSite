@@ -4,7 +4,7 @@ import SubItemList from './SubItemList'
 const Item = ({ item }) => {
 
     const container = {
-        maxWidth: "50%",
+        maxWidth:"800px",
         display: "flex",
         backgroundColor: "white",
         marginBottom: "20px",

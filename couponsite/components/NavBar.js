@@ -18,10 +18,14 @@ const NavBar = () => {
 
     return(
         <div style = {container}>   
-            <Button style = {buttonStyle}>化粧品</Button>
-            <Button style = {buttonStyle}>衣装</Button>
-            <Button style = {buttonStyle}>Button</Button>
-            <Button style = {buttonStyle}>Button</Button>
+            <Button style = {buttonStyle}>最新情報</Button>
+            <Button style = {buttonStyle}>化粧品スキンケア</Button>
+            <Button style = {buttonStyle}>ファッション</Button>
+            <Button style = {buttonStyle}>インテリア</Button>
+            <Button style = {buttonStyle}>食品</Button>
+            <Button style = {buttonStyle}>電気製品</Button>
+            <Button style = {buttonStyle}>メンズ</Button>
+            <Button style = {buttonStyle}>健康・ダイエット</Button>
         </div>
     )
 

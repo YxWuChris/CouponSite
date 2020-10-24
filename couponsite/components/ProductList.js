@@ -4,7 +4,9 @@ import Item from './Item'
 const ProductList = () => {
 
     const container = {
-        backgroundColor:"#F5F5F5"
+        marginlLeft:"auto",
+        marginRight:"auto",
+        maxWidth:"800px"
     }
 
     return (
