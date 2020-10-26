@@ -2,26 +2,39 @@
 const SubItemList = ({ subItem }) => {
 
     const subItemImg = {
-        maxWidth: "70%"
+        maxWidth: "60%",
+        marginLeft: "auto",
+        marginRight: "auto"
     }
 
     const subItemList = {
+        marginTop:"20px",
         display: "flex",
     }
 
     const delPrice = {
-        color: "gray",
+        color: "#A0A0A0",
         display: "inline-block"
     }
 
     const currPrice = {
-        color: "red",
-        display:"inline-block",
-        marginRight:"10px"
+        color: "#FF6347 ",
+        display: "inline-block",
+        marginRight: "10px",
+        fontWeight:"bold"
     }
 
     const price = {
-        display:"inline-block"
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "inline-block"
+    }
+
+    const TitleStyle = {
+        marginLeft: "auto",
+        marginRight: "auto",
+        color: "#707070",
+        fontFamily:"Times New Roman"
     }
 
     return (
@@ -35,10 +48,12 @@ const SubItemList = ({ subItem }) => {
                                 style={subItemImg}
                                 src={subItem.img}
                             />
-                            <p>{subItem.title}</p>
                             <div style={price}>
                                 <p style={currPrice}>${subItem.price}</p>
                                 <del style={delPrice}>${subItem.o_price}</del>
+                            </div>
+                            <div style={TitleStyle}>
+                                    {subItem.title}
                             </div>
                         </div>
 

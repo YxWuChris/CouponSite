@@ -4,7 +4,7 @@ import SubItemList from './SubItemList'
 const Item = ({ item }) => {
 
     const container = {
-        maxWidth:"800px",
+        maxWidth:"900px",
         display: "flex",
         backgroundColor: "white",
         marginBottom: "20px",
@@ -18,17 +18,26 @@ const Item = ({ item }) => {
     };
 
     const subTitle = {
-        color: "red",
+        color: "#FF6347",
         fontFamily: 'Open Sans'
     }
 
     const titleImg = {
         margin: "10px",
-        maxWidth: "70%"
+        maxWidth: "90%",
     }
 
     const buyButton = {
-        maxWidth: "30%"
+        maxWidth: "30%",
+        marginTop: "15%",
+        background: "#FF7F50",
+        marginRight:"auto",
+        marginLeft:"auto",
+    }
+
+    const DescriptionStyle = {
+        fontFamily: "Times New Roman",
+        marginBottom: "5px"
     }
 
 
@@ -46,7 +55,7 @@ const Item = ({ item }) => {
                     <h2>{item.title}</h2>
                     <h2 style={subTitle}>{item.subtitle}</h2>
                     {item.descriptions.map(description => (
-                        <li>{description}</li>
+                        <li style = {DescriptionStyle}>{description}</li>
                     ))}
                     <SubItemList subItem = {item.itemList}/>
                 </div>

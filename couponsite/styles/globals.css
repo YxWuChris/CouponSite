@@ -16,10 +16,11 @@ a {
 }
 
 .subItem {
-  max-width: 30%;
-  transition: transform 150ms;
+  width: 30%;
+  max-height:200px;
+  transition: 0.3s;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .subItem:hover {

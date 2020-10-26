@@ -6,7 +6,7 @@ const NavBar = () => {
 
     const container = {
         width: "100%",
-        backgroundColor: "pink",
+        backgroundColor: "orange",
         display: "flex",
         justifyContent:"center",
     };

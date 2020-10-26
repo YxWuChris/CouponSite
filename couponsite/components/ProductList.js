@@ -6,7 +6,7 @@ const ProductList = () => {
     const container = {
         marginlLeft:"auto",
         marginRight:"auto",
-        maxWidth:"800px"
+        width:"900px",
     }
 
     return (
