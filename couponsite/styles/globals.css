@@ -17,14 +17,14 @@ a {
 
 .subItem {
   width: 30%;
-  max-height:200px;
+  /* max-height:200px; */
   transition: 0.3s;
   display: flex;
   flex-direction: column;
 }
 
 .subItem:hover {
-	box-shadow: gray 0px 0px 10px;
+	box-shadow: LightGray 0px 0px 10px;
 	opacity: 0.9;
 }
 

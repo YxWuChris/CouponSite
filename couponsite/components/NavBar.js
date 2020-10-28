@@ -5,6 +5,8 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core';
 const NavBar = () => {
 
     const container = {
+        marginLeft: "auto",
+        marginRight: "auto",
         width: "100%",
         backgroundColor: "orange",
         display: "flex",

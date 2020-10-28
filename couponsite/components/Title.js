@@ -1,7 +1,7 @@
 const Title = () => {
     return(
         <div>
-            <h1>Coupon Website</h1>
+            <h1>COCOPONS</h1>
          </div>   
     )
 

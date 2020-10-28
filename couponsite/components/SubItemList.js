@@ -4,7 +4,8 @@ const SubItemList = ({ subItem }) => {
     const subItemImg = {
         maxWidth: "60%",
         marginLeft: "auto",
-        marginRight: "auto"
+        marginRight: "auto",
+        marginTop: "20px"
     }
 
     const subItemList = {
