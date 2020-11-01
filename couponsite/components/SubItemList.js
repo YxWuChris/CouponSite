@@ -39,18 +39,18 @@ const SubItemList = ({ subItem }) => {
         fontFamily:"Times New Roman"
     }
 
-    const subItems = subItem.split(";")
-    const subItemsJson = []
-    for(var i = 0; i < subItems.length; i++){
-        subItemsJson.push(JSON.parse(subItems[i]))
-    }
+    // const subItems = subItem.split(";")
+    // const subItemsJson = []
+    // for(var i = 0; i < subItems.length; i++){
+    //     subItemsJson.push(JSON.parse(subItems[i]))
+    // }
 
     return (
         <>
             <div style={subItemList}>
                 {
                     // <div style={subItemList}>
-                    subItemsJson.map(subItem => (
+                    subItem.map(subItem => (
                         <div key = {subItem} className="subItem">
                             <img
                                 style={subItemImg}

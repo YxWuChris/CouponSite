@@ -11,12 +11,20 @@ const MainBanner = ({ imgUrl }) => {
         width: "100%"
     }
 
-    const ImgContent = {
+    const ImgMask = {
         position:"absolute",
         height: "40%",
         width: "100%",
         top:"60%",
-        background: "linear-gradient(transparent, black)"
+        background: "linear-gradient(transparent, black)",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center"
+    }
+
+    const ImgContent = {
+        color: "White",
+        fontSize:"3rem"
     }
 
     return (
@@ -24,7 +32,10 @@ const MainBanner = ({ imgUrl }) => {
             <a href="https://www.w3schools.com">
                 <img style = {MainBannerImg} src={imgUrl} />
             </a>
-            <div style={ImgContent}>
+            <div style={ImgMask}>
+                <div style={ImgContent}>
+                    ImgContent
+                </div>
             </div>
         </div>
 

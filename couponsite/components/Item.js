@@ -40,6 +40,17 @@ const Item = ({ item }) => {
         marginBottom: "5px"
     }
 
+    const referenceStyle = {
+        paddingRight:"10px",
+        paddingTop:"10px"
+    }
+
+    const checkButtonStyle = {
+        color:"#1E90FF",
+        fontFamily: "Times New Roman",
+        marginBottom: "5px"
+    }
+
     const descriptions = item.infoList.split(";")
 
 
@@ -51,14 +62,15 @@ const Item = ({ item }) => {
                 </div>
 
                 <div>
-                    <h2>{item.title}</h2>
+                    <h2><a href={item.link}>{item.title}</a></h2>
                     <h2 style={subTitle}>{item.subtitle}</h2>
                     {descriptions.map(description => (
                         <li key={description} style = {DescriptionStyle}>{description}</li>
                     ))}
+                    <li style = {checkButtonStyle}><a href={item.link}>Click this to check</a></li>
                     <SubItemList subItem = {item.itemList}/>
                 </div>
-                <div>
+                <div style={referenceStyle}>
                     <p>{item.reference}</p>
                 </div>
             </div>
