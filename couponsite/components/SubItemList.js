@@ -1,6 +1,7 @@
 
 const SubItemList = ({ subItem }) => {
 
+
     const subItemImg = {
         maxWidth: "60%",
         marginLeft: "auto",
@@ -38,13 +39,19 @@ const SubItemList = ({ subItem }) => {
         fontFamily:"Times New Roman"
     }
 
+    const subItems = subItem.split(";")
+    const subItemsJson = []
+    for(var i = 0; i < subItems.length; i++){
+        subItemsJson.push(JSON.parse(subItems[i]))
+    }
+
     return (
         <>
             <div style={subItemList}>
                 {
                     // <div style={subItemList}>
-                    subItem.map(subItem => (
-                        <div className="subItem">
+                    subItemsJson.map(subItem => (
+                        <div key = {subItem} className="subItem">
                             <img
                                 style={subItemImg}
                                 src={subItem.img}

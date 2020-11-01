@@ -40,11 +40,10 @@ const Item = ({ item }) => {
         marginBottom: "5px"
     }
 
-
+    const descriptions = item.infoList.split(";")
 
 
     return (
-        
             <div style={container}>
                 <div style={titleImgContainer}>
                     <img style={titleImg} src={item.titleImg} />
@@ -54,8 +53,8 @@ const Item = ({ item }) => {
                 <div>
                     <h2>{item.title}</h2>
                     <h2 style={subTitle}>{item.subtitle}</h2>
-                    {item.descriptions.map(description => (
-                        <li style = {DescriptionStyle}>{description}</li>
+                    {descriptions.map(description => (
+                        <li key={description} style = {DescriptionStyle}>{description}</li>
                     ))}
                     <SubItemList subItem = {item.itemList}/>
                 </div>
