@@ -19,7 +19,7 @@ const Title = () => {
                 <h1>COCOPONS</h1>
             </div>
             <div style = {titleInfo}>
-                <h2>最新・人気商品のクーポン情報サイト!</h2>
+                <h2>最新・人気商品の割引きクーポン情報サイト！</h2>
             </div>
          </div>   
     )

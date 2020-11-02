@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import BrandScroller from "./BrandScroller";
 import ProductList from "./ProductList";
 
 const MainBody = () => {
@@ -16,11 +17,18 @@ const MainBody = () => {
         marginLeft:"auto"
     }
 
+    const itemBrandStyle = {
+        display:"flex"
+    }
+
     return (
         <div style={container}>
             <div style={contentContainer}>
             <Banner />
-            <ProductList />
+            <div style={itemBrandStyle}>
+                <ProductList />
+                <BrandScroller />
+            </div>
             </div>
         </div>
     )

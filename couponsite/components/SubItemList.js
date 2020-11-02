@@ -12,6 +12,7 @@ const SubItemList = ({ subItem }) => {
     const subItemList = {
         marginTop:"20px",
         display: "flex",
+        marginBottom:"20px"
     }
 
     const delPrice = {

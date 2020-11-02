@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { itemApi } from '../Data/Api.js'
 import mockData from '../Data/mockData.json'
+import AutoScrollView from "react-auto-scrollview";
+
 
 const ProductList = () => {
 
@@ -32,11 +34,13 @@ const ProductList = () => {
     // } else {
 
         return (
+            <>
             <div style={container}>
                 {mockData.map(item => (
                     <Item item={item} />
                 ))}
             </div>
+            </>
         )
     // }
 

@@ -23,8 +23,9 @@ const MainBanner = ({ imgUrl }) => {
     }
 
     const ImgContent = {
+        marginTop:"5%",
         color: "White",
-        fontSize:"3rem"
+        fontSize:"2rem"
     }
 
     return (
@@ -34,7 +35,7 @@ const MainBanner = ({ imgUrl }) => {
             </a>
             <div style={ImgMask}>
                 <div style={ImgContent}>
-                    ImgContent
+                    The Biggest discount info man
                 </div>
             </div>
         </div>
