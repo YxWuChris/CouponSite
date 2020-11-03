@@ -2,40 +2,65 @@ import AutoScrollView from "react-auto-scrollview"
 
 const BrandScroller = () => {
 
-    const BrandScrollerStyle = {
+    const ImgScrollerStyle = {
         width:"250px",
         marginRight:"auto",
         marginLeft:"auto",
     }
 
     const ItemStyle = {
-        marginLeft:"auto",
+        marginLeft:"50px",
         marginRight:"auto",
     }
 
     const imgStyle = {
-        width:"200px",
-        height:"200px"
+        width:"150px",
+        height:"150px",
+        borderRadius: "10px",
     }
 
-    const titleStyle = {
+    const NameStyle = {
         height:"15px",
         textAlign: "center",
         fontSize:"1.5rem",
         color:"grey"
     }
 
+    const BrandScrollerStyle = {
+    }
+
+    const titleStyle = {
+        textAlign: "center",
+        fontSize:"1.3rem",
+        marginBottom:"20px",
+        color:"grey"
+    }
+
+
     return (
         <div style={BrandScrollerStyle}>
+        <div style={titleStyle}>パートナーシップ</div>
+        <div style={ImgScrollerStyle}>
         <AutoScrollView height={600}>
-            <div style={ItemStyle}><img style = {imgStyle} src={imgUrl.macys}/><div style={titleStyle} /></div>
-            <div style={ItemStyle}><img style = {imgStyle} src={imgUrl.sephora}/><div style={titleStyle} /></div>
-            <div style={ItemStyle}><img style = {imgStyle} src={imgUrl.nordstrom}/><div style={titleStyle} /></div>
-            <div style={ItemStyle}><img style = {imgStyle} src={imgUrl.amazon}/><div style={titleStyle} /></div>
-            <div style={ItemStyle}><img style = {imgStyle} src={imgUrl.lancome}/><div style={titleStyle} /></div>
+            <div style={ItemStyle}><a href={imgLink.macys}><img style = {imgStyle} src={imgUrl.macys} href={imgLink.macys}/></a><div style={NameStyle} /></div>
+            <div style={ItemStyle}><a href={imgLink.macys}><img style = {imgStyle} src={imgUrl.sephora}/></a><div style={NameStyle} /></div>
+            <div style={ItemStyle}><a href={imgLink.nordstrom}><img style = {imgStyle} src={imgUrl.nordstrom}/></a><div style={NameStyle} /></div>
+            <div style={ItemStyle}><a href={imgLink.amazon}><img style = {imgStyle} src={imgUrl.amazon}/></a><div style={NameStyle}/></div>
+            <div style={ItemStyle}><a href={imgLink.lancome}><img style = {imgStyle} src={imgUrl.lancome}/></a><div style={NameStyle} /></div>
         </AutoScrollView>
         </div>
+        </div>
     )
+}
+
+const imgLink = {
+    macys:"https://www.macys.com/",
+    sephora:"https://www.sephora.com/",
+    nordstrom:"https://www.nordstromrack.com",
+    amazon:"https://www.amazon.com",
+    lancome:"https://lancome.com"
+
+
 }
 
 const imgUrl = {

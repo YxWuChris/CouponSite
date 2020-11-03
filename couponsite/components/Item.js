@@ -19,7 +19,6 @@ const Item = ({ item }) => {
 
     const subTitle = {
         color: "#FF6347",
-        fontFamily: 'Open Sans'
     }
 
     const titleImg = {
@@ -28,7 +27,7 @@ const Item = ({ item }) => {
     }
 
     const buyButton = {
-        maxWidth: "30%",
+        maxWidth: "60%",
         marginTop: "15%",
         background: "#FF7F50",
         marginRight:"auto",
@@ -36,7 +35,6 @@ const Item = ({ item }) => {
     }
 
     const DescriptionStyle = {
-        fontFamily: "Times New Roman",
         marginBottom: "5px"
     }
 
@@ -48,7 +46,10 @@ const Item = ({ item }) => {
     const checkButtonStyle = {
         color:"#1E90FF",
         fontFamily: "Times New Roman",
-        marginBottom: "5px"
+        marginBottom: "5px",
+        "&:hover": {
+           color:"red"
+        }
     }
 
     const descriptions = item.infoList.split(";")
@@ -58,7 +59,7 @@ const Item = ({ item }) => {
             <div style={container}>
                 <div style={titleImgContainer}>
                     <img style={titleImg} src={item.titleImg} />
-                    <Button style={buyButton} variant="contained" color="secondary" href={item.link}>Buy</Button>
+                    <Button style={buyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button>
                 </div>
 
                 <div>
@@ -67,15 +68,20 @@ const Item = ({ item }) => {
                     {descriptions.map(description => (
                         <li key={description} style = {DescriptionStyle}>{description}</li>
                     ))}
-                    <li style = {checkButtonStyle}><a href={item.link}>Click this to check</a></li>
+                    <li style = {checkButtonStyle}><a href={item.link}>もっと見る</a></li>
                     <SubItemList subItem = {item.itemList}/>
                 </div>
-                <div style={referenceStyle}>
+                <div style={referenceStyle} onClick={openInNewTab()}>
                     <p>{item.reference}</p>
                 </div>
             </div>
             
     )
 }
+
+function openInNewTab( ) {
+    // var win = window.open("https://www.google.com", '_blank');
+    // win.focus();
+  }
 
 export default Item;

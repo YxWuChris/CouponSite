@@ -12,9 +12,9 @@ const MainBody = () => {
     }
 
     const contentContainer = {
-        maxWidth:"1800px", 
+        width:"1200px", 
         marginRight:"auto",
-        marginLeft:"auto"
+        marginLeft:"auto",
     }
 
     const itemBrandStyle = {

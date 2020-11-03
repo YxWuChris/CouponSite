@@ -15,7 +15,8 @@ const NavBar = () => {
 
     const buttonStyle = {
         color: "white",
-        margin: "20px"
+        margin: "20px",
+        fontSize:"1.2rem"
     }
 
     return(

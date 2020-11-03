@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>COCOPONS 最新・人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング</title>
+        <title>COCOPONSココポンズ 最新・人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Title />

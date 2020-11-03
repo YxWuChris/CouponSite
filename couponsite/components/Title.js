@@ -1,25 +1,30 @@
 const Title = () => {
 
     const titleStyle = {
-        display:"flex"
+        width:"1200px",
+        marginLeft:"auto",
+        marginRight:"auto",
+        display:"flex",
     }
 
     const logoStyle = {
-        marginLeft:"10%"
+
     }
 
     const titleInfo = {
-        marginLeft: "auto",
-        marginRight:"10%"
+        marginTop:"30px",
+        marginLeft:"280px",
+        color:"#FFB266",
+
     }
 
     return(
         <div style={titleStyle}>
             <div style = {logoStyle}>
-                <h1>COCOPONS</h1>
+                    <img src="/logo.png" alt="my image" />
             </div>
             <div style = {titleInfo}>
-                <h2>最新・人気商品の割引きクーポン情報サイト！</h2>
+                <h2>ココポンズ ・最新人気商品の割引きクーポン情報サイト！</h2>
             </div>
          </div>   
     )
