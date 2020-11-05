@@ -30,12 +30,12 @@ const MainBanner = ({ imgUrl }) => {
 
     return (
         <div style={MainBannerImgContainer}>
-            <a href="https://www.w3schools.com">
+            <a href="https://www.cocopons.com">
                 <img style = {MainBannerImg} src={imgUrl} />
             </a>
             <div style={ImgMask}>
                 <div style={ImgContent}>
-                    The Biggest discount info man
+                ブラックフライデー情報
                 </div>
             </div>
         </div>

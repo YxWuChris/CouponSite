@@ -43,19 +43,19 @@ const SubBanner = ({ imgUrlAbove, imgUrlBottom }) => {
     return (
         <div style={SubBannerImgContainer}>
             <div style={AboveContainer}>
-                <a href="https://www.w3schools.com">
+                <a href="https://www.macys.com/p/black-friday/?tagid=4291183&cm_mmc=Connexity_Si-_-n-_-n-_-n&m_sc=sem&m_sb=connexity&m_tp=PLA&CAWELAID=120156340009470470&m_ac=Connexity_si&m_cn=n">
                     <img style={imgStyle} src={imgUrlAbove} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}>subBanner1</div>
+                    <div style={ImgContent}>めいしばい</div>
                 </div>
             </div>
             <div style={BottomContainer}>
-                <a href="https://www.w3schools.com">
+                <a href="https://www.sephora.com">
                     <img style={imgStyle} src={imgUrlBottom} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}>subBanner2</div>
+                    <div style={ImgContent}></div>
                 </div>
             </div>
         </div>
