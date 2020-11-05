@@ -21,7 +21,9 @@ const Title = () => {
     return(
         <div style={titleStyle}>
             <div style = {logoStyle}>
+                    <a href="https://www.cocopons.com">
                     <img src="/logo.png" alt="my image" />
+                    </a>
             </div>
             <div style = {titleInfo}>
                 <h2>ココポンズ ・最新人気商品の割引きクーポン情報サイト！</h2>
