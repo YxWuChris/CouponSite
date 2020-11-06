@@ -1,21 +1,66 @@
 [
     {
-    "title":"今までに無い最大セール！Apple AirPods Wireless Headphones with Charging Case",
-    "subtitle":"$99 + 送料無料",
-    "titleImg":"https://images-na.ssl-images-amazon.com/images/I/71NTi82uBEL._AC_SX679_.jpg",
-    "infoList": "Amazon より１番新しいモデルの Apple AirPods Wireless Headphones with Charging Case が送料込みで $99.99.;Amazon からお買い上げの方のみ送料無料.",
-    "link":"https://www.amazon.com/dp/B07PXGQC1Q?ascsubtag=4cc9e2acee6080d75164dfcb9d8582f5_US_i_-_DE_O_P_2130015_845812024_no_refer",
-    "reference":"Amazon.com",
-    "itemList":[]
+        "title": "期間限定タイムセール！Harvey Nichols & Co Ltd Designer Handbags",
+        "subtitle": "最大 22% Off",
+        "titleImg": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/e58/67e/18e/baf98fefc8c6e8c56123781.jpg_300_300_2_e36d.jpg",
+        "infoList": "Harvey Nichols & Co Ltd より Designer Handbags が最大 22% off;$250 以上お買い上げの方につき送料無料;セール期間11月11日～11月13日まで",
+        "link": "https://www.harveynichols.com/int/womens/all-accessories/bags/?utm_source=dealmoon.com&utm_medium=affiliates&utm_campaign=1&ranMID=44787&ranEAID=Jv*v1%2FWldzg&ranSiteID=Jv.v1_Wldzg-sikqCEwdU2ESDaWDqygO_A",
+        "reference": "Havery Nichols",
+        "itemList": [
+            {
+                "img": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/e95/06f/b41/e170e1549e8afcb1af6938d.jpg_300_300_2_51f2.jpg",
+                "o_price": 455.00,
+                "price": 404.95,
+                "link": "https://www.harveynichols.com/int/brand/boyy/411529-buckle-burgundy-leather-clutch/p3915976/?utm_source=dealmoon.com&utm_medium=affiliates&utm_campaign=1&ranMID=44787&ranEAID=Jv*v1%2FWldzg&ranSiteID=Jv.v1_Wldzg-aWeCD_jyODKyDsY6BlGL7g"
+            },
+            {
+                "img": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/fee/822/16b/c1b7dce2e10f7a7306a057f.jpg_300_300_2_0dd1.jpg",
+                "o_price": 180.0,
+                "price": 160.2,
+                "link": "https://www.harveynichols.com/int/brand/staud/405947-bean-black-leather-clutch/p3882999/?utm_source=dealmoon.com&utm_medium=affiliates&utm_campaign=1&ranMID=44787&ranEAID=Jv*v1%2FWldzg&ranSiteID=Jv.v1_Wldzg-knilcf50hYTJREt34B7ffQ"
+            },
+            {
+                "img": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/ad3/668/361/b10d5282542505a9b50f108.jpg_300_300_2_a8e0.jpg",
+                "o_price": 780,
+                "price": 694,
+                "link": "https://www.harveynichols.com/int/brand/rosantica-/341558-holli-crystal-embellished-top-handle-bag/p3544064/?utm_source=dealmoon.com&utm_medium=affiliates&utm_campaign=1&ranMID=44787&ranEAID=Jv*v1%2FWldzg&ranSiteID=Jv.v1_Wldzg-qw7dbxhll8.Xh5UFypwffg"
+            }
+        ]
     },
     {
-        "title":"もうすぐ！Macy's ブラックフライデーセール",
-        "subtitle":"最大値下げ商品 $2.99～",
-        "titleImg":"https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/1ef/795/a08/071100421c08c3c37c0cb46.jpg_300_300_2_265f.jpg",
+        "title": "Sigma コスメアイテムが大セール",
+        "subtitle": "60% off",
+        "titleImg": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/2f2/ba4/982/6516ba0ffe679a8737c11ab.jpg_300_300_2_faa6.jpg",
+        "infoList": "Sigma Beauty よりコスメアイテムが 40% off;$50 以上お買い上げの方につき送料無料;セール11月8日まで",
+        "link": "https://sigmabeauty.com/?utm_source=Impact&utm_medium=16635&utm_campaign=Online%20Tracking%20Link&clickid=Rwp15NQMVxyOUACwUx0Mo36DUkE2IExge3Mhzs0",
+        "reference": "Sigma Beauty",
+        "itemList": []
+    },
+    {
+        "title": "24S から バーバリー(Burberry) がセール中",
+        "subtitle": "最大 30% off",
+        "titleImg": "https://img.zolaprod.babsta.net/g5fxAZAohpYI3OLwrQ_Ju_MMXuQ=/fit-in/708x800/2f827925fe694363a5e4909173f17096",
+        "infoList": "24S より Burberry アイテムが最大 30% off;$200 以上お買い上げの方につき送料無料;セール11月12日まで",
+        "link": "https://www.24s.com/en-us/women/brands/burberry?utm_source=rakuten&utm_medium=affiliation&utm_campaign=affiliation_rakuten_1851970_dealmoon.com&utm_content=10&utm_term=UKNetwork&ranMID=42680&ranEAID=Jv*v1%2FWldzg&ranSiteID=Jv.v1_Wldzg-SGZZEs_26iNy.BPF36Hwvw",
+        "reference": "24S",
+        "itemList": []
+    },
+    {
+        "title": "今までに無い最大セール！Apple AirPods Wireless Headphones with Charging Case",
+        "subtitle": "$99 + 送料無料",
+        "titleImg": "https://images-na.ssl-images-amazon.com/images/I/71NTi82uBEL._AC_SX679_.jpg",
+        "infoList": "Amazon より１番新しいモデルの Apple AirPods Wireless Headphones with Charging Case が送料込みで $99.99.;Amazon からお買い上げの方のみ送料無料.",
+        "link": "https://www.amazon.com/dp/B07PXGQC1Q?ascsubtag=4cc9e2acee6080d75164dfcb9d8582f5_US_i_-_DE_O_P_2130015_845812024_no_refer",
+        "reference": "Amazon",
+        "itemList": []
+    },
+    {
+        "title": "もうすぐ！Macy's ブラックフライデーセール",
+        "subtitle": "最大値下げ商品 $2.99～",
+        "titleImg": "https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/1ef/795/a08/071100421c08c3c37c0cb46.jpg_300_300_2_265f.jpg",
         "infoList": "Macys.com より Macy's 2020 ブラックフライデーセール情報.;$25 以上お買い上げの方につき送料無料.",
-        "link":"https://www.macys.com/p/black-friday/?tagid=4291183&cm_mmc=Connexity_Si-_-n-_-n-_-n&m_sc=sem&m_sb=connexity&m_tp=PLA&CAWELAID=120156340009470470&m_ac=Connexity_si&m_cn=n",
-        "reference":"Macy's",
-        "itemList":[]
-        }
-
+        "link": "https://www.macys.com/p/black-friday/?tagid=4291183&cm_mmc=Connexity_Si-_-n-_-n-_-n&m_sc=sem&m_sb=connexity&m_tp=PLA&CAWELAID=120156340009470470&m_ac=Connexity_si&m_cn=n",
+        "reference": "Macy's",
+        "itemList": []
+    }
 ]
