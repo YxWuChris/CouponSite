@@ -1,5 +1,6 @@
 import Button from '@material-ui/core/Button';
 import { makeStyles, createStyles, Theme } from '@material-ui/core';
+import { useMediaQuery } from 'react-responsive';
 
 
 const NavBar = () => {
@@ -19,7 +20,12 @@ const NavBar = () => {
         fontSize:"1.2rem"
     }
 
+
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+
     return(
+        <>
+        {isDesktopOrLaptop && <>
         <div style = {container}>   
             <Button style = {buttonStyle}>最新情報</Button>
             <Button style = {buttonStyle}>化粧品スキンケア</Button>
@@ -30,6 +36,8 @@ const NavBar = () => {
             <Button style = {buttonStyle}>メンズ</Button>
             <Button style = {buttonStyle}>健康・ダイエット</Button>
         </div>
+        </>}
+        </>
     )
 
 

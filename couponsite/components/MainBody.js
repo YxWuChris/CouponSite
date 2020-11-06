@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import BrandScroller from "./BrandScroller";
 import ProductList from "./ProductList";
+import { useMediaQuery } from 'react-responsive';
 
 const MainBody = () => {
 
@@ -21,13 +22,17 @@ const MainBody = () => {
         display:"flex"
     }
 
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+
     return (
         <div style={container}>
             <div style={contentContainer}>
             <Banner />
             <div style={itemBrandStyle}>
                 <ProductList />
-                <BrandScroller />
+                {isDesktopOrLaptop && <>
+                    <BrandScroller />
+                </>}
             </div>
             </div>
         </div>
