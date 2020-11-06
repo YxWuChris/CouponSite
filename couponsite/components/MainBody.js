@@ -6,34 +6,37 @@ import { useMediaQuery } from 'react-responsive';
 const MainBody = () => {
 
     const container = {
-        backgroundColor:"#F5F5F5",
-        display:"flex",
+        backgroundColor: "#F5F5F5",
+        display: "flex",
         flexDirection: "column",
-        paddingTop:"30px"
+        paddingTop: "30px"
     }
 
     const contentContainer = {
-        width:"1200px", 
-        marginRight:"auto",
-        marginLeft:"auto",
+        width: "1200px",
+        marginRight: "auto",
+        marginLeft: "auto",
     }
 
     const itemBrandStyle = {
-        display:"flex"
+        display: "flex"
     }
 
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
 
     return (
         <div style={container}>
+
             <div style={contentContainer}>
-            <Banner />
-            <div style={itemBrandStyle}>
-                <ProductList />
                 {isDesktopOrLaptop && <>
-                    <BrandScroller />
+                    <Banner />
                 </>}
-            </div>
+                <div style={itemBrandStyle}>
+                    <ProductList />
+                    {isDesktopOrLaptop && <>
+                        <BrandScroller />
+                    </>}
+                </div>
             </div>
         </div>
     )

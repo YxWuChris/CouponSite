@@ -1,5 +1,7 @@
 import Button from '@material-ui/core/Button'
 import SubItemList from './SubItemList'
+import { useMediaQuery } from 'react-responsive'
+import {useState,useEffect} from 'react'
 
 const Item = ({ item }) => {
 
@@ -45,6 +47,12 @@ const Item = ({ item }) => {
         marginTop:"5px"
     }
 
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+
+    const size = useWindowSize()
+
+    console.log(size)
+
     const checkButtonStyle = {
         // color:"#1E90FF",
         // fontFamily: "Times New Roman",
@@ -84,17 +92,48 @@ const Item = ({ item }) => {
                     <li style = {checkButtonStyle}><a href={item.link}><div style={checkInfo}>もっと見る</div></a></li>
                     <SubItemList subItem = {item.itemList}/>
                 </div>
-                <div style={referenceStyle} onClick={openInNewTab()}>
+                {isDesktopOrLaptop && <>
+                    <div style={referenceStyle}>
                     <p>{item.reference}</p>
                 </div>
+                </>}
             </div>
             
     )
 }
 
-function openInNewTab( ) {
-    // var win = window.open("https://www.google.com", '_blank');
-    // win.focus();
+function useWindowSize() {
+    // Initialize state with undefined width/height so server and client renders match
+    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+  
+    useEffect(() => {
+      // only execute all the code below in client side
+      if (typeof window !== 'undefined') {
+        // Handler to call on window resize
+        function handleResize() {
+          // Set window width/height to state
+          setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        }
+      
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+       
+        // Call handler right away so state gets updated with initial window size
+        handleResize();
+      
+        // Remove event listener on cleanup
+        return () => window.removeEventListener("resize", handleResize);
+      }
+    }, []); // Empty array ensures that effect is only run on mount
+    return windowSize;
   }
+  
 
 export default Item;

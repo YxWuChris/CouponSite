@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <Title />
-      <NavBar />
+      {/* <NavBar /> */}
       <MainBody />
 
     </div>
