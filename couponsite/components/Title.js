@@ -20,12 +20,9 @@ const Title = () => {
 
     }
 
-    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
         <div style={titleStyle}>
-            {isTabletOrMobile && <p>You are sized like a tablet or mobile phone though</p>}
             <div style={logoStyle}>
                 <a href="https://www.cocopons.com">
                     <img src="/logo.png" alt="my image" />

@@ -22,6 +22,7 @@ const NavBar = () => {
 
 
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return(
         <>
@@ -37,6 +38,10 @@ const NavBar = () => {
             <Button style = {buttonStyle}>健康・ダイエット</Button>
         </div>
         </>}
+        
+        {isTabletOrMobile && null}
+
+        
         </>
     )
 

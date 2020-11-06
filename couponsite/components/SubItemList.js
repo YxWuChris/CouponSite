@@ -3,10 +3,10 @@ const SubItemList = ({ subItem }) => {
 
 
     const subItemImg = {
-        maxWidth: "60%",
+        maxWidth: "80%",
         marginLeft: "auto",
         marginRight: "auto",
-        marginTop: "20px"
+        marginTop: "10px"
     }
 
     const subItemList = {

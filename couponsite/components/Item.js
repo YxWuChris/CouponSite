@@ -41,7 +41,7 @@ const Item = ({ item }) => {
     }
 
     const referenceStyle = {
-        marginLeft:"35px",
+        marginLeft:"25px",
         marginTop:"5px"
     }
 
@@ -62,7 +62,7 @@ const Item = ({ item }) => {
 
     const contentContainer = {
         marginLeft:"30px",
-        width:"500px"
+        width:"570px"
     }
 
     const descriptions = item.infoList.split(";")
