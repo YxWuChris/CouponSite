@@ -24,20 +24,39 @@ const Title = () => {
 
     }
 
+    const mobileTitleStyle = {
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "flex",
+    }
+
 
     return (
+        <>
+        {isDesktopOrLaptop && <>
         <div style={titleStyle}>
             <div style={logoStyle}>
                 <a href="https://www.cocopons.com">
                     <img src="/logo.png" alt="my image" />
                 </a>
             </div>
-            {isDesktopOrLaptop && <>
+            
             <div style={titleInfo}>
                 <h2>ココポンズ ・最新人気商品の割引きクーポン情報サイト！</h2>
             </div>
-            </>}   
+              
         </div>
+        </>} 
+        {isTabletOrMobile && <>
+        <div style = {mobileTitleStyle}>
+         <div style={logoStyle}>
+                <a href="https://www.cocopons.com">
+                    <img src="/logo.png" alt="my image" />
+                </a>
+            </div>
+        </div>
+        </>}
+        </>
     )
 }
 

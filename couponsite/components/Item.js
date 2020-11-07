@@ -74,7 +74,6 @@ const Item = ({ item }) => {
     const mobileContainer = {
         width:"600px",
         height:"200px",
-        backgroundColor:"red"
     }
 
 
@@ -103,6 +102,18 @@ const Item = ({ item }) => {
             </>}
         {isTabletOrMobile && <>
             <div style={mobileContainer}>
+            <div style={titleImgContainer}>
+                    {/* <img style={titleImg} src={item.titleImg} />
+                    <Button style={buyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button> */}
+                </div>
+                <div style={contentContainer}>
+                    <h3><a href={item.link}>{item.title}</a></h3>
+                    <h3 style={subTitle}>{item.subtitle}</h3>
+                    {descriptions.map(description => (
+                        <li key={description} style = {DescriptionStyle}>{description}</li>
+                    ))}
+                    <li style = {checkButtonStyle}><a href={item.link}><div style={checkInfo}>もっと見る</div></a></li>
+                </div>
 
            
             </div>

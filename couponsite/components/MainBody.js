@@ -18,6 +18,12 @@ const MainBody = () => {
         marginLeft: "auto",
     }
 
+    const mobileContentConatiner = {
+        width:"820px",
+        marginRight: "auto",
+        marginLeft: "auto",
+    }
+
     const itemBrandStyle = {
         display: "flex"
     }
@@ -27,18 +33,26 @@ const MainBody = () => {
 
     return (
         <div style={container}>
+            {isDesktopOrLaptop && <> 
 
             <div style={contentContainer}>
-                {isDesktopOrLaptop && <> 
                     <Banner />
-                </>}
                 <div style={itemBrandStyle}>
                     <ProductList />
-                    {isDesktopOrLaptop && <>
-                        <BrandScroller />
-                    </>}
+                    <BrandScroller />
+
                 </div>
             </div>
+            </>}
+            {isTabletOrMobile && <>
+
+                <div style={mobileContentConatiner}>
+                <div style={itemBrandStyle}>
+                    <ProductList />
+                </div>
+            </div>
+
+            </>}
         </div>
     )
 
