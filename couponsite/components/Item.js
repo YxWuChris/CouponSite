@@ -48,18 +48,14 @@ const Item = ({ item }) => {
     }
 
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
-    const size = useWindowSize()
+    const [size,setSize] = useState(useWindowSize())
 
     console.log(size)
 
     const checkButtonStyle = {
-        // color:"#1E90FF",
-        // fontFamily: "Times New Roman",
         marginBottom: "5px",
-        "&:hover": {
-           color:"red"
-        }
     }
 
     const checkInfo = {
@@ -75,8 +71,16 @@ const Item = ({ item }) => {
 
     const descriptions = item.infoList.split(";")
 
+    const mobileContainer = {
+        width:"410px",
+        height:"200px",
+        backgroundColor:"red"
+    }
+
 
     return (
+        <>
+        {isDesktopOrLaptop && <>
             <div style={container}>
                 <div style={titleImgContainer}>
                     <img style={titleImg} src={item.titleImg} />
@@ -92,12 +96,20 @@ const Item = ({ item }) => {
                     <li style = {checkButtonStyle}><a href={item.link}><div style={checkInfo}>もっと見る</div></a></li>
                     <SubItemList subItem = {item.itemList}/>
                 </div>
-                {isDesktopOrLaptop && <>
                     <div style={referenceStyle}>
                     <p>{item.reference}</p>
-                </div>
-                </>}
+                    </div>
             </div>
+            </>}
+        {isTabletOrMobile && <>
+            <div style={mobileContainer}>
+
+           
+            </div>
+            
+
+        </>}
+        </>
             
     )
 }

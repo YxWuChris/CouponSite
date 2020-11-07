@@ -23,12 +23,13 @@ const MainBody = () => {
     }
 
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
         <div style={container}>
 
             <div style={contentContainer}>
-                {isDesktopOrLaptop && <>
+                {isDesktopOrLaptop && <> 
                     <Banner />
                 </>}
                 <div style={itemBrandStyle}>
