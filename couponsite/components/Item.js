@@ -72,7 +72,7 @@ const Item = ({ item }) => {
     const descriptions = item.infoList.split(";")
 
     const mobileContainer = {
-        marginLeft: "50px",
+        marginLeft: "60px",
         width: "600px",
         minHeight: "200px",
         backgroundColor: "white",
