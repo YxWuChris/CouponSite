@@ -9,7 +9,8 @@ const MainBody = () => {
         backgroundColor: "#F5F5F5",
         display: "flex",
         flexDirection: "column",
-        paddingTop: "30px"
+        paddingTop: "30px",
+        minWidth:"800px"
     }
 
     const contentContainer = {
@@ -19,7 +20,7 @@ const MainBody = () => {
     }
 
     const mobileContentConatiner = {
-        width:"820px",
+        width:"800px",
         marginRight: "auto",
         marginLeft: "auto",
     }

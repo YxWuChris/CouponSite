@@ -7,7 +7,7 @@ const Title = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     const titleStyle = {
-        width: "1200px",
+        maxWidth: "1200px",
         marginLeft: "auto",
         marginRight: "auto",
         display: "flex",
@@ -33,21 +33,23 @@ const Title = () => {
 
     return (
         <>
-        {isDesktopOrLaptop && <>
+        {/* {isDesktopOrLaptop && <> */}
         <div style={titleStyle}>
             <div style={logoStyle}>
                 <a href="https://www.cocopons.com">
                     <img src="/logo.png" alt="my image" />
                 </a>
             </div>
-            
+
+            {isDesktopOrLaptop && <>
             <div style={titleInfo}>
                 <h2>ココポンズ ・最新人気商品の割引きクーポン情報サイト！</h2>
             </div>
-              
+            </>}
         </div>
-        </>} 
-        {isTabletOrMobile && <>
+        {/* </>}  */}
+
+        {/* {isTabletOrMobile && <>
         <div style = {mobileTitleStyle}>
          <div style={logoStyle}>
                 <a href="https://www.cocopons.com">
@@ -55,7 +57,7 @@ const Title = () => {
                 </a>
             </div>
         </div>
-        </>}
+        </>} */}
         </>
     )
 }
