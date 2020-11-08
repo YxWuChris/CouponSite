@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta name="google-site-verification" content="KtSzy0oZ8Ku-OKt5-HuhQv5qID5DHlVcMKtuKI8JF64" />
-        <title>COCOPONSココポンズ 最新・人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング</title>
+        <title>COCOPONSココポンズ  最新・人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="最新・人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング"/>
       </Head>
 
       <Title />
