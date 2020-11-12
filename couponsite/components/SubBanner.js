@@ -47,7 +47,7 @@ const SubBanner = ({ imgUrlAbove, imgUrlBottom }) => {
                     <img style={imgStyle} src={imgUrlAbove} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}>めいしばい</div>
+                    <div style={ImgContent}>メイシーズ</div>
                 </div>
             </div>
             <div style={BottomContainer}>
