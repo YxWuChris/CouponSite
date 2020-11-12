@@ -52,8 +52,6 @@ const Item = ({ item }) => {
 
     const [size, setSize] = useState(useWindowSize())
 
-    console.log(size)
-
     const checkButtonStyle = {
         marginBottom: "5px",
     }
