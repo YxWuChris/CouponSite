@@ -38,7 +38,7 @@ const ProductList = () => {
             <>
             <div style={container}>
                 {itemData.map(item => (
-                    <Item item={item} />
+                    <Item key={item.title} item={item} />
                 ))}
             </div>
             </>
