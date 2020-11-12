@@ -7,16 +7,16 @@ import mockData from '../Data/mockData.json'
 
 const ProductList = () => {
 
-    // const [itemData, setItemData] = useState(null);
+    const [itemData, setItemData] = useState(null);
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     async function fetchData() {
-    //         const result = await axios(itemApi);
-    //         setItemData(result.data)
-    //     }
-    //     fetchData();
-    // }, []);
+        async function fetchData() {
+            const result = await axios(itemApi);
+            setItemData(result.data)
+        }
+        fetchData();
+    }, []);
 
     
 
@@ -28,22 +28,22 @@ const ProductList = () => {
         width: "900px",
     }
 
-    // if (itemData == null) {
-    //     return (
-    //         <></>
-    //     )
-    // } else {
+    if (itemData == null) {
+        return (
+            <></>
+        )
+    } else {
 
         return (
             <>
             <div style={container}>
-                {mockData.map(item => (
+                {itemData.map(item => (
                     <Item item={item} />
                 ))}
             </div>
             </>
         )
-    // }
+    }
 
 
 }
