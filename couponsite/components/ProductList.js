@@ -5,21 +5,18 @@ import { itemApi } from '../Data/Api.js'
 import mockData from '../Data/mockData.json'
 
 
-const ProductList = () => {
+const ProductList = (itemList) => {
 
     const [itemData, setItemData] = useState(null);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        async function fetchData() {
-            const result = await axios(itemApi);
-            setItemData(result.data)
-        }
-        fetchData();
-    }, []);
-
-    
-
+    //     async function fetchData() {
+    //         const result = await axios(itemApi);
+    //         setItemData(result.data)
+    //     }
+    //     fetchData();
+    // }, []);
 
 
     const container = {
@@ -28,7 +25,7 @@ const ProductList = () => {
         width: "900px",
     }
 
-    if (itemData == null) {
+    if (itemList == null) {
         return (
             <></>
         )
@@ -37,7 +34,7 @@ const ProductList = () => {
         return (
             <>
             <div style={container}>
-                {itemData.map(item => (
+                {itemList.itemList.itemList.map(item => (
                     <Item key={item.title} item={item} />
                 ))}
             </div>

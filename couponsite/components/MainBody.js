@@ -3,7 +3,7 @@ import BrandScroller from "./BrandScroller";
 import ProductList from "./ProductList";
 import { useMediaQuery } from 'react-responsive';
 
-const MainBody = () => {
+const MainBody = (itemList) => {
 
     const container = {
         backgroundColor: "#F5F5F5",
@@ -38,7 +38,7 @@ const MainBody = () => {
                 <div style={contentContainer}>
                     <Banner />
                     <div style={itemBrandStyle}>
-                        <ProductList />
+                        <ProductList itemList={itemList}/>
                         <BrandScroller />
 
                     </div>
@@ -48,7 +48,7 @@ const MainBody = () => {
 
                 <div style={mobileContentConatiner}>
                     <div style={itemBrandStyle}>
-                        <ProductList />
+                        <ProductList itemList={itemList}/>
                     </div>
                 </div>
 

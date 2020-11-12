@@ -4,8 +4,9 @@ import NavBar from '../components/NavBar'
 import Title from '../components/Title'
 import styles from '../styles/Home.module.css'
 import MainBody from '../components/MainBody'
+import { itemApi } from '../Data/Api.js'
 
-export default function Home() {
+export default function Home(props) {
 
   return (
     <div>
@@ -20,8 +21,21 @@ export default function Home() {
 
       <Title />
       {/* <NavBar /> */}
-      <MainBody />
+      <MainBody itemList={props.discountItem}/>
 
     </div>
   )
+
 }
+
+export async function getServerSideProps() {
+  const res = await fetch(itemApi);
+  const data = await res.json();
+
+  return {
+    props:{
+      discountItem:data
+    }
+  };
+}
+
