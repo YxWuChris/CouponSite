@@ -71,6 +71,13 @@ const Item = ({ item }) => {
         width: "570px"
     }
 
+    const mobileContentContainer = {
+        marginLeft: "30px",
+        marginRight:"min(20px)",
+        maxWidth: "570px",
+        width:"480px",
+    }
+
     const descriptions = item.infoList.split(";")
 
     const mobileContainer = {
@@ -85,7 +92,7 @@ const Item = ({ item }) => {
 
     const mobileImgContainer = {
         height:"280px",
-        width:"280px",
+        width:"260px",
         marginLeft:"10px",
         marginTop:"auto",
         marginBottom:"auto",
@@ -99,6 +106,16 @@ const Item = ({ item }) => {
         marginBottom: "auto",
         marginLeft: "auto",
         marginRight: "auto"
+    }
+
+    const mobileBuyButton ={
+        width: "120px",
+        background: "#FF7F50",
+        marginBottom:"10px",
+        marginRight:"auto",
+        marginTop:"80px",
+        marginBottom:"20px",
+        marginLeft:"270px"
     }
 
 
@@ -131,13 +148,11 @@ const Item = ({ item }) => {
                         <img style={mobileTitleImg} src={item.titleImg} />
                         {/* <Button style={buyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button> */}
                     </div>
-                    <div style={contentContainer}>
+                    <div style={mobileContentContainer}>
                         <h2><a href={item.link}>{item.title}</a></h2>
                         <h2 style={subTitle}>{item.subtitle}</h2>
-                        {descriptions.map(description => (
-                            <li key={description} style={MobileDescriptionStyle}>{description}</li>
-                        ))}
-                        <li style={checkButtonStyle}><a href={item.link}><div style={checkInfo}>もっと見る</div></a></li>
+                        <h3>{descriptions[0]}</h3>
+                        <Button style={mobileBuyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button>
                     </div>
 
 
