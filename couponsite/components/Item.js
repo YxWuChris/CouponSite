@@ -76,7 +76,7 @@ const Item = ({ item }) => {
     const mobileContainer = {
         marginLeft: "30px",
         width: "730px",
-        minHeight: "250px",
+        minHeight: "300px",
         backgroundColor: "white",
         display: "flex",
         borderTop: "solid",
@@ -84,16 +84,19 @@ const Item = ({ item }) => {
     }
 
     const mobileImgContainer = {
-        height:"210px",
-        width:"210px",
+        height:"280px",
+        width:"280px",
         marginLeft:"10px",
-        marginTop:"10px",
+        marginTop:"auto",
+        marginBottom:"auto",
         marginRight:"auto",
     }
 
     const mobileTitleImg = {
-        width: "190px",
-        height:"210px",
+        width: "260px",
+        height:"260px",
+        marginTop: "auto",
+        marginBottom: "auto",
         marginLeft: "auto",
         marginRight: "auto"
     }
@@ -129,8 +132,8 @@ const Item = ({ item }) => {
                         {/* <Button style={buyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button> */}
                     </div>
                     <div style={contentContainer}>
-                        <h3><a href={item.link}>{item.title}</a></h3>
-                        <h3 style={subTitle}>{item.subtitle}</h3>
+                        <h2><a href={item.link}>{item.title}</a></h2>
+                        <h2 style={subTitle}>{item.subtitle}</h2>
                         {descriptions.map(description => (
                             <li key={description} style={MobileDescriptionStyle}>{description}</li>
                         ))}
