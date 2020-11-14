@@ -1,4 +1,4 @@
-const SubBanner = ({ imgUrlAbove, imgUrlBottom }) => {
+const SubBanner = (subInfo) => {
 
     const SubBannerImgContainer = {
         width: "400px",
@@ -39,23 +39,24 @@ const SubBanner = ({ imgUrlAbove, imgUrlBottom }) => {
         fontSize:"1rem"
     }
 
+    console.log(subInfo)
 
     return (
         <div style={SubBannerImgContainer}>
             <div style={AboveContainer}>
-                <a href="https://www.macys.com/p/black-friday/?tagid=4291183&cm_mmc=Connexity_Si-_-n-_-n-_-n&m_sc=sem&m_sb=connexity&m_tp=PLA&CAWELAID=120156340009470470&m_ac=Connexity_si&m_cn=n">
-                    <img style={imgStyle} src={imgUrlAbove} />
+                <a href={subInfo.aboveInfo.link}>
+                    <img style={imgStyle} src={subInfo.aboveInfo.img} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}>メイシーズ</div>
+                    <div style={ImgContent}>{subInfo.aboveInfo.title}</div>
                 </div>
             </div>
             <div style={BottomContainer}>
-                <a href="https://www.sephora.com">
-                    <img style={imgStyle} src={imgUrlBottom} />
+                <a href={subInfo.belowInfo.link}>
+                    <img style={imgStyle} src={subInfo.belowInfo.img} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}></div>
+                    <div style={ImgContent}>{subInfo.belowInfo.title}</div>
                 </div>
             </div>
         </div>

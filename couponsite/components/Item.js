@@ -42,6 +42,11 @@ const Item = ({ item }) => {
         marginBottom: "5px"
     }
 
+    const MobileDescriptionStyle = {
+        marginBottom: "5px",
+        fontSize:"1.1rem"
+    }
+
     const referenceStyle = {
         marginLeft: "25px",
         marginTop: "5px",
@@ -71,11 +76,12 @@ const Item = ({ item }) => {
 
     const mobileContainer = {
         marginLeft: "30px",
-        width: "700px",
-        minHeight: "200px",
+        width: "730px",
+        minHeight: "250px",
         backgroundColor: "white",
         display: "flex",
-        marginBottom: "30px",
+        borderTop: "solid",
+        borderColor: "#A8A8A8"
     }
 
     const mobileImgContainer = {
@@ -117,7 +123,7 @@ const Item = ({ item }) => {
                         <h3><a href={item.link}>{item.title}</a></h3>
                         <h3 style={subTitle}>{item.subtitle}</h3>
                         {descriptions.map(description => (
-                            <li key={description} style={DescriptionStyle}>{description}</li>
+                            <li key={description} style={MobileDescriptionStyle}>{description}</li>
                         ))}
                         <li style={checkButtonStyle}><a href={item.link}><div style={checkInfo}>もっと見る</div></a></li>
                     </div>

@@ -1,4 +1,4 @@
-const MainBanner = ({ imgUrl }) => {
+const MainBanner = (mainInfo) => {
 
     const MainBannerImgContainer = {
         position:"relative",
@@ -30,12 +30,12 @@ const MainBanner = ({ imgUrl }) => {
 
     return (
         <div style={MainBannerImgContainer}>
-            <a href="https://www.cocopons.com">
-                <img style = {MainBannerImg} src={imgUrl} />
+            <a href={mainInfo.mainInfo.link}>
+                <img style = {MainBannerImg} src={mainInfo.mainInfo.img} />
             </a>
             <div style={ImgMask}>
                 <div style={ImgContent}>
-                ブラックフライデー情報
+                {mainInfo.mainInfo.title}
                 </div>
             </div>
         </div>

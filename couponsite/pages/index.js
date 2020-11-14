@@ -5,6 +5,7 @@ import Title from '../components/Title'
 import styles from '../styles/Home.module.css'
 import MainBody from '../components/MainBody'
 import { itemApi } from '../Data/Api.js'
+import { bannerApi } from '../Data/Api.js'
 
 export default function Home(props) {
 
@@ -21,7 +22,7 @@ export default function Home(props) {
 
       <Title />
       {/* <NavBar /> */}
-      <MainBody itemList={props.discountItem}/>
+      <MainBody infoList={props}/>
 
     </div>
   )
@@ -29,12 +30,16 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(itemApi);
-  const data = await res.json();
+  const disRes = await fetch(itemApi);
+  const discountData = await disRes.json();
+
+  const banRes = await fetch(bannerApi);
+  const bannerData = await banRes.json();
 
   return {
     props:{
-      discountItem:data
+      discountItem:discountData,
+      bannerItem:bannerData
     }
   };
 }

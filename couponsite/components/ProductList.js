@@ -5,7 +5,7 @@ import { itemApi } from '../Data/Api.js'
 import mockData from '../Data/mockData.json'
 
 
-const ProductList = (itemList) => {
+const ProductList = (discountInfo) => {
 
     const [itemData, setItemData] = useState(null);
 
@@ -18,14 +18,13 @@ const ProductList = (itemList) => {
     //     fetchData();
     // }, []);
 
-
     const container = {
         marginlLeft: "auto",
         marginRight: "auto",
         width: "900px",
     }
 
-    if (itemList == null) {
+    if (discountInfo == null) {
         return (
             <></>
         )
@@ -34,7 +33,7 @@ const ProductList = (itemList) => {
         return (
             <>
             <div style={container}>
-                {itemList.itemList.itemList.map(item => (
+                {discountInfo.discountInfo.map(item => (
                     <Item key={item.title} item={item} />
                 ))}
             </div>
