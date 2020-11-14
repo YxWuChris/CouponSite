@@ -87,7 +87,7 @@ const Item = ({ item }) => {
         backgroundColor: "white",
         display: "flex",
         borderTop: "solid",
-        borderColor: "#E0E0E0"
+        borderColor: "#F5F5F5"
     }
 
     const mobileImgContainer = {
@@ -109,13 +109,14 @@ const Item = ({ item }) => {
     }
 
     const mobileBuyButton ={
-        width: "120px",
+        width: "150px",
         background: "#FF7F50",
         marginBottom:"10px",
         marginRight:"auto",
         marginTop:"80px",
         marginBottom:"20px",
-        marginLeft:"270px"
+        marginLeft:"250px",
+        fontSize:"1.2rem"
     }
 
 
