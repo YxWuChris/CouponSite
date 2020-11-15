@@ -7,7 +7,8 @@ const Banner = (bannerInfo) => {
         width:"1200px",
         height:"500px",
         display: "flex",
-        marginBottom: "20px"
+        marginBottom: "20px",
+        overflow: "hidden",
     }
 
     return (

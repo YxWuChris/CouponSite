@@ -8,7 +8,7 @@ const MainBanner = (mainInfo) => {
 
     const MainBannerImg = {
         height:"100%",
-        width: "100%"
+        width: "100%",
     }
 
     const ImgMask = {
@@ -31,11 +31,11 @@ const MainBanner = (mainInfo) => {
     return (
         <div style={MainBannerImgContainer}>
             <a href={mainInfo.mainInfo.link}>
-                <img style = {MainBannerImg} src={mainInfo.mainInfo.img} />
+                <img className="mainBanner" src={mainInfo.mainInfo.img} />
             </a>
             <div style={ImgMask}>
-                <div style={ImgContent}>
-                {mainInfo.mainInfo.title}
+                <div className="mainBanner-title-link">
+                <a href={mainInfo.mainInfo.link}>{mainInfo.mainInfo.title}</a>
                 </div>
             </div>
         </div>

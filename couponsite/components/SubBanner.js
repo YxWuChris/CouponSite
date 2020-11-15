@@ -11,32 +11,34 @@ const SubBanner = (subInfo) => {
     }
 
     const ImgMask = {
-        position:"absolute",
+        position: "absolute",
         height: "40%",
         width: "100%",
-        top:"60%",
+        top: "60%",
         background: "linear-gradient(transparent, black)",
-        display:"flex",
-        justifyContent:"center",
-        alignItems:"center"
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }
 
     const AboveContainer = {
         position: "relative",
         height: "50%",
-        width: "100%"
+        width: "100%",
+        overflow: "hidden",
     }
 
     const BottomContainer = {
         position: "relative",
         height: "50%",
-        width: "100%"
+        width: "100%",
+        overflow: "hidden",
     }
 
     const ImgContent = {
-        marginTop:"5%",
+        marginTop: "5%",
         color: "White",
-        fontSize:"1rem"
+        fontSize: "1rem"
     }
 
     console.log(subInfo)
@@ -45,18 +47,22 @@ const SubBanner = (subInfo) => {
         <div style={SubBannerImgContainer}>
             <div style={AboveContainer}>
                 <a href={subInfo.aboveInfo.link}>
-                    <img style={imgStyle} src={subInfo.aboveInfo.img} />
+                    <img className="subBanner" src={subInfo.aboveInfo.img} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}>{subInfo.aboveInfo.title}</div>
+                    <a href={subInfo.aboveInfo.link}>
+                        <div className="subBanner-title-link">{subInfo.aboveInfo.title}</div>
+                    </a>
                 </div>
             </div>
             <div style={BottomContainer}>
                 <a href={subInfo.belowInfo.link}>
-                    <img style={imgStyle} src={subInfo.belowInfo.img} />
+                    <img className="subBanner" src={subInfo.belowInfo.img} />
                 </a>
                 <div style={ImgMask}>
-                    <div style={ImgContent}>{subInfo.belowInfo.title}</div>
+                    <a href={subInfo.belowInfo.link}>
+                        <div className="subBanner-title-link">{subInfo.belowInfo.title}</div>
+                    </a>
                 </div>
             </div>
         </div>

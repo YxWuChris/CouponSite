@@ -28,6 +28,54 @@ a {
 	opacity: 0.9;
 }
 
+.mainBanner {
+  height: 100%;
+  width:  100%;
+  transition: all 0.5s;
+}
+
+.subBanner {
+  height: 100%;
+  width:  100%;
+  transition: all 0.5s;
+}
+
+
+.subBanner:hover{
+  transition: all 0.5s;
+  transform: scale(1.1)
+}
+
+.mainBanner:hover{
+  transition: all 0.5s;
+  transform: scale(1.1)
+}
+
 #__next-prerender-indicator {
   display: none;
+}
+
+.mainBanner-title-link {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 25px;
+  padding: 10px;
+  text-decoration: none;
+}
+.mainBanner-title-link:hover {
+  text-decoration: underline;
+}
+
+.subBanner-title-link {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.subBanner-title-link:hover {
+  text-decoration: underline;
 }
