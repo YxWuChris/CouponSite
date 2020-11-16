@@ -3,9 +3,10 @@ const SubItemList = ({ subItem }) => {
 
 
     const subItemImg = {
-        maxWidth: "80%",
-        marginLeft: "auto",
-        marginRight: "auto",
+        width: "150px",
+        height: "150px",
+        marginLeft: "10px",
+        marginRight: "10px",
         marginTop: "10px"
     }
 
@@ -53,10 +54,12 @@ const SubItemList = ({ subItem }) => {
                     // <div style={subItemList}>
                     subItem.map(subItem => (
                         <div key = {subItem} className="subItem">
+                            <a href={subItem.link}>
                             <img
                                 style={subItemImg}
                                 src={subItem.img}
                             />
+                            </a>
                             <div style={price}>
                                 <p style={currPrice}>${subItem.price}</p>
                                 <del style={delPrice}>${subItem.o_price}</del>
