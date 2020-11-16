@@ -19,11 +19,11 @@ export default function Home(props) {
         <script dangerouslySetInnerHTML={
           {
             __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments)}
-        gtag("js", new Date());
-        gtag("config", "<G-JMJPSC1S9B>");
-    `}
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments)}
+            gtag("js", new Date());
+            gtag("config", "G-JMJPSC1S9B");
+          `}
         }>
         </script>
 
