@@ -12,17 +12,32 @@ export default function Home(props) {
   return (
     <div>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JMJPSC1S9B" >
+        </script>
+        <script dangerouslySetInnerHTML={
+          {
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments)}
+        gtag("js", new Date());
+        gtag("config", "<G-JMJPSC1S9B>");
+    `}
+        }>
+        </script>
+
         <title>Cocopons.com@最新・人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="cocopons.com はアメリカで最新最大の割引き・販促コード・クーポン付きの商品を日本語で紹介するオンラインショッピングウェブサイトです。メイク用品・レディース/メンズ ファッション・キッズ/ベビー用品・アクセサリー・バッグなど多々ご紹介中。"/>
-        <meta name="keywords" content="ココポンズ,ショッピング,割引クーポン,最新情報,激安,アメリカ,送料無料,人気ブランド,トレンド"/>
-        <meta name="robots" content="index,follow" class="next-head"/>
-        <meta name="googlebot" content="index,follow" class="next-head"/>
+        <meta name="description" content="cocopons.com はアメリカで最新最大の割引き・販促コード・クーポン付きの商品を日本語で紹介するオンラインショッピングウェブサイトです。メイク用品・レディース/メンズ ファッション・キッズ/ベビー用品・アクセサリー・バッグなど多々ご紹介中。" />
+        <meta name="keywords" content="ココポンズ,ショッピング,割引クーポン,最新情報,激安,アメリカ,送料無料,人気ブランド,トレンド" />
+        <meta name="robots" content="index,follow" class="next-head" />
+        <meta name="googlebot" content="index,follow" class="next-head" />
       </Head>
 
       <Title />
       {/* <NavBar /> */}
-      <MainBody infoList={props}/>
+      <MainBody infoList={props} />
 
     </div>
   )
@@ -37,9 +52,9 @@ export async function getServerSideProps() {
   const bannerData = await banRes.json();
 
   return {
-    props:{
-      discountItem:discountData,
-      bannerItem:bannerData
+    props: {
+      discountItem: discountData,
+      bannerItem: bannerData
     }
   };
 }
