@@ -25,7 +25,7 @@ const SubItemList = ({ subItem }) => {
         color: "#FF6347 ",
         display: "inline-block",
         marginRight: "10px",
-        fontWeight:"bold"
+        fontSize:"1.2rem"
     }
 
     const price = {
@@ -62,7 +62,11 @@ const SubItemList = ({ subItem }) => {
                             </a>
                             <div style={price}>
                                 <p style={currPrice}>${subItem.price}</p>
-                                <del style={delPrice}>${subItem.o_price}</del>
+                                {subItem.o_price? (
+                                   <del style={delPrice}>${subItem.o_price}</del>
+                                ):(
+                                    <div></div>
+                                )}
                             </div>
                             <div style={TitleStyle}>
                                     {subItem.title}
