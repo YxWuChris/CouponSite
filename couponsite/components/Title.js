@@ -20,10 +20,14 @@ const Title = () => {
     const titleInfo = {
         marginTop: "30px",
         marginLeft: "280px",
-        color: "coral"
+        color: "coral",
 
     }
+    
+    const h2Style = {
+        fontSize:"1.5rem"
 
+    }
     const mobileTitleStyle = {
         marginLeft: "auto",
         marginRight: "auto",
@@ -43,7 +47,7 @@ const Title = () => {
 
             {isDesktopOrLaptop && <>
             <div style={titleInfo}>
-                <h2>ココポンズ ・最新人気商品の割引きクーポン情報サイト！</h2>
+                <h2 style={h2Style}>ココポンズ ・最新人気商品の割引きクーポン情報サイト！</h2>
             </div>
             </>}
         </div>
