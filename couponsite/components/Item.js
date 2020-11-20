@@ -175,11 +175,7 @@ const Item = ({ item }) => {
                         <h3>{descriptions[0]}</h3>
                         <Button style={mobileBuyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button>
                     </div>
-
-
                 </div>
-
-
             </>}
         </>
 

@@ -2,6 +2,7 @@ import Banner from "./Banner";
 import BrandScroller from "./BrandScroller";
 import ProductList from "./ProductList";
 import { useMediaQuery } from 'react-responsive';
+import ArticleList from "./ArticleList";
 
 const MainBody = (infoList) => {
 
@@ -28,6 +29,11 @@ const MainBody = (infoList) => {
     const itemBrandStyle = {
         display: "flex"
     }
+    
+    const ArticleBrandList = {
+        display: "flex",
+        flexDirection: "column"
+    }
 
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
@@ -39,8 +45,10 @@ const MainBody = (infoList) => {
                     <Banner bannerInfo={infoList.infoList.bannerItem}/>
                     <div style={itemBrandStyle}>
                         <ProductList discountInfo={infoList.infoList.discountItem}/>
+                        <div style={ArticleBrandList}>
+                        <ArticleList />
                         <BrandScroller />
-
+                        </div>
                     </div>
                 </div>
             </>}
