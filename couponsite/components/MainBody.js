@@ -46,7 +46,7 @@ const MainBody = (infoList) => {
                     <div style={itemBrandStyle}>
                         <ProductList discountInfo={infoList.infoList.discountItem}/>
                         <div style={ArticleBrandList}>
-                        <ArticleList />
+                        {/* <ArticleList /> */}
                         <BrandScroller />
                         </div>
                     </div>
