@@ -8,40 +8,34 @@ const NavBar = () => {
     const container = {
         marginLeft: "auto",
         marginRight: "auto",
+        height:"80px",
         width: "100%",
-        backgroundColor: "orange",
+        backgroundColor:"orange",
         display: "flex",
         justifyContent:"center",
     };
 
     const buttonStyle = {
-        color: "white",
-        margin: "20px",
-        fontSize:"1.2rem"
+        color:"white",
+        width:"250px",
+        fontSize:"1.4rem",
+        height:"80px"
     }
 
 
-    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1000px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1000px)' })
 
     return(
         <>
-        {isDesktopOrLaptop && <>
         <div style = {container}>   
+        {isDesktopOrLaptop && <>
+            {/* <Button style = {buttonStyle}>最新情報</Button>
             <Button style = {buttonStyle}>最新情報</Button>
-            <Button style = {buttonStyle}>化粧品スキンケア</Button>
-            <Button style = {buttonStyle}>ファッション</Button>
-            <Button style = {buttonStyle}>インテリア</Button>
-            <Button style = {buttonStyle}>食品</Button>
-            <Button style = {buttonStyle}>電気製品</Button>
-            <Button style = {buttonStyle}>メンズ</Button>
-            <Button style = {buttonStyle}>健康・ダイエット</Button>
-        </div>
+            <Button style = {buttonStyle}>最新情報</Button>
+            <Button style = {buttonStyle}>最新情報</Button> */}
         </>}
-        
-        {isTabletOrMobile && <></>}
-
-        
+        </div>
         </>
     )
 

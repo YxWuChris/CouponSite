@@ -37,7 +37,7 @@ export default function Home(props) {
       </Head>
 
       <Title />
-      {/* <NavBar /> */}
+      <NavBar />
       <MainBody infoList={props} />
 
     </div>
