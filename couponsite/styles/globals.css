@@ -80,3 +80,17 @@ a {
 .subBanner-title-link:hover {
   text-decoration: underline;
 }
+
+.articleItem{
+  height: 120px;
+  display: flex;
+  background-color:white;
+
+}
+
+.articleItem:hover{
+  height: 120px;
+  display: flex;
+  background-color:#D0D0D0;
+
+}
