@@ -43,9 +43,10 @@ const Item = ({ item }) => {
     const buyButton = {
         width: "120px",
         marginTop: "15%",
-        background: "#FF7F50",
+        background: "orangered",
         marginRight: "auto",
         marginLeft: "auto",
+        borderRadius: "0px",
     }
 
     const DescriptionStyle = {
@@ -126,7 +127,7 @@ const Item = ({ item }) => {
 
     const mobileBuyButton = {
         width: "150px",
-        background: "#FF7F50",
+        background: "orangered",
         marginBottom: "10px",
         marginRight: "auto",
         marginTop: "80px",
@@ -142,7 +143,7 @@ const Item = ({ item }) => {
                 <div style={container}>
                     <div style={titleImgContainer}>
                         <img style={titleImg} src={item.titleImg} />
-                        <Button style={buyButton} variant="contained" color="secondary" href={item.link}>今すぐ購入</Button>
+                        <Button style={buyButton} variant="contained" color="primary" href={item.link}>今すぐ購入</Button>
                     </div>
 
                     <div style={contentContainer}>

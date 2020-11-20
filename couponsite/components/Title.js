@@ -20,7 +20,7 @@ const Title = () => {
     const titleInfo = {
         marginTop: "30px",
         marginLeft: "280px",
-        color: "#FFB266",
+        color: "coral"
 
     }
 
