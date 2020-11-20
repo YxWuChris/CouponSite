@@ -1,4 +1,4 @@
-const ArticleItem = () => {
+const ArticleItem = (data) => {
 
     const TitleImgContainer = {
         height: "100px",
@@ -34,15 +34,28 @@ const ArticleItem = () => {
         marginBottom: "auto"
     }
 
+    const mainTitle = {
+        marginBottom:"5px"
 
+    }
+    const subTitle = {
+        color:"coral"
+
+    }
+    
     return (
-        <a href="/articles/ReportTax">
+        <a href={data.data.link}>
             <div className="articleItem">
                 <div style={TitleImgContainer}>
-                    <img style={TitleImg} src="https://i.guim.co.uk/img/media/32e9869ed021117650176c0da473f134fcbe65a3/0_166_5000_3002/master/5000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=30b15f98c1df58ad88bd3b0e649610f8" />
+                    <img style={TitleImg} src={data.data.img} />
                 </div>
                 <div style={TitleContentContainer}>
-                    米国の納税申告書が届くまでにどのくらいかかるの
+                    <div style={mainTitle}>
+                    {data.data.title}
+                    </div>
+                    <div style={subTitle}>
+                    {data.data.subTitle}
+                    </div>
                 </div>
             </div>
         </a>

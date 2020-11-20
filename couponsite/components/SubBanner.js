@@ -41,8 +41,6 @@ const SubBanner = (subInfo) => {
         fontSize: "1rem"
     }
 
-    console.log(subInfo)
-
     return (
         <div style={SubBannerImgContainer}>
             <div style={AboveContainer}>

@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import MainBody from '../components/MainBody'
 import { itemApi } from '../Data/Api.js'
 import { bannerApi } from '../Data/Api.js'
+import { articleApi } from '../Data/Api.js'
 
 export default function Home(props) {
 
@@ -51,10 +52,14 @@ export async function getServerSideProps() {
   const banRes = await fetch(bannerApi);
   const bannerData = await banRes.json();
 
+  const artRes = await fetch(articleApi);
+  const artData = await artRes.json();
+
   return {
     props: {
       discountItem: discountData,
-      bannerItem: bannerData
+      bannerItem: bannerData,
+      ArticleItem: artData
     }
   };
 }

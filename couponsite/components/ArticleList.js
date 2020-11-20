@@ -1,6 +1,6 @@
 import ArticleItem from './ArticleItem'
 
-const ArticleList = () => {
+const ArticleList = (articleInfo) => {
 
     const ArticleListContainer = {
         minHeight:"300px",
@@ -11,7 +11,7 @@ const ArticleList = () => {
     }
 
     const TitleStyle = {
-        width:"160px",
+        width:"170px",
         color:'#696969',
         fontSize:"1.5rem",
         marginLeft:"auto",
@@ -19,11 +19,13 @@ const ArticleList = () => {
         marginTop:"15px",
         marginBottom:"30px"
     }
-
+    
     return(
         <div style={ArticleListContainer}>
-            <div style={TitleStyle}>実用的な記事</div>
-            <ArticleItem />
+            <div style={TitleStyle}>お役立ちブログ</div>
+            {articleInfo.articleInfo.map(article => (
+                <ArticleItem data={article}/>
+            ))}
         </div>
     )
 
