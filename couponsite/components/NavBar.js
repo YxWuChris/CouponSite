@@ -12,7 +12,7 @@ const NavBar = () => {
         backgroundColor:"orange",
         display: "flex",
         justifyContent:"center",
-        minWidth: "1200px",
+        minWidth: "800px",
     };
 
     const buttonStyle = {
