@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Title from '../../components/Title';
 import Article from '../../components/Article';
+import NavBar from '../../components/Navbar';
 
 const ReportTax = () => {
 
@@ -19,6 +20,7 @@ const ReportTax = () => {
     return(
         <>
         <Title />
+        <NavBar />
         {itemData? (
             <Article articleData={itemData} />
         ):(

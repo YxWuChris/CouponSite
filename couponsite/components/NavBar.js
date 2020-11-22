@@ -9,10 +9,10 @@ const NavBar = () => {
         marginLeft: "auto",
         marginRight: "auto",
         height:"80px",
-        width: "100%",
         backgroundColor:"orange",
         display: "flex",
         justifyContent:"center",
+        minWidth: "1200px",
     };
 
     const buttonStyle = {
@@ -29,12 +29,12 @@ const NavBar = () => {
     return(
         <>
         <div style = {container}>   
-        {isDesktopOrLaptop && <>
-            {/* <Button style = {buttonStyle}>最新情報</Button>
+        {/* {isDesktopOrLaptop && <>
             <Button style = {buttonStyle}>最新情報</Button>
             <Button style = {buttonStyle}>最新情報</Button>
-            <Button style = {buttonStyle}>最新情報</Button> */}
-        </>}
+            <Button style = {buttonStyle}>最新情報</Button>
+            <Button style = {buttonStyle}>最新情報</Button>
+        </>} */}
         </div>
         </>
     )

@@ -53,11 +53,6 @@ const Item = ({ item }) => {
         marginBottom: "15px",
     }
 
-    const MobileDescriptionStyle = {
-        marginBottom: "5px",
-        fontSize: "1.1rem"
-    }
-
     const referenceStyle = {
         float:"right",
         color: "gray"
@@ -93,6 +88,8 @@ const Item = ({ item }) => {
         marginRight: "min(20px)",
         maxWidth: "570px",
         width: "480px",
+        // borderBottom: "2px solid #C8C8C8",
+        // borderColor: "#C8C8C8",
     }
 
     const descriptions = item.infoList.split(";")

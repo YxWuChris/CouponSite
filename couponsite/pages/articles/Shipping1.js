@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Title from '../../components/Title';
 import Article from '../../components/Article';
+import Navbar from '../../components/Navbar';
 
 const Shipping1 = () =>{
 
@@ -20,6 +21,7 @@ const Shipping1 = () =>{
     return(
         <>
         <Title />
+        <Navbar />
         {itemData? (
             <Article articleData={itemData} />
         ):(
