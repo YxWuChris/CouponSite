@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Title from '../../components/Title';
 import Article from '../../components/Article';
-import Navbar from '../../components/NavBar';
+import NavBar from '../../components/NavBar';
 
 const Shipping1 = () =>{
 
