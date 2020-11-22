@@ -2,7 +2,8 @@ const ArticleContainer = {
     marginLeft: "auto",
     marginRight: "auto",
     width: "1200px",
-    backgroundColor:"white"
+    backgroundColor:"white",
+    paddingBottom:"100px"
 }
 
 const BodyContainer = {
