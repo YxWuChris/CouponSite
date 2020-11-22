@@ -3,6 +3,7 @@ import axios from 'axios';
 import Title from '../../components/Title';
 import Article from '../../components/Article';
 import NavBar from '../../components/NavBar';
+import Head from 'next/head';
 
 const ReportTax = () => {
 
