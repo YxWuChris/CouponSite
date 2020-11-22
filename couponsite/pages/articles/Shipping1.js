@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Title from '../../components/Title';
 import Article from '../../components/Article';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/NavBar';
 
 const Shipping1 = () =>{
 
@@ -21,7 +21,7 @@ const Shipping1 = () =>{
     return(
         <>
         <Title />
-        <Navbar />
+        <NavBar />
         {itemData? (
             <Article articleData={itemData} />
         ):(
