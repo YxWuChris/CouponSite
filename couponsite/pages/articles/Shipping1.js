@@ -44,7 +44,6 @@ const Shipping1 = () =>{
         <meta name="googlebot" content="index,follow" class="next-head" />
         </Head>
          <Title />
-        <Title />
         <NavBar />
         {itemData? (
             <Article articleData={itemData} />
