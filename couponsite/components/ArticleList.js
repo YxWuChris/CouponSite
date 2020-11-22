@@ -7,7 +7,7 @@ const ArticleList = (articleInfo) => {
         minHeight:"300px",
         width:"280px",
         backgroundColor:"white",
-        marginBottom:"20px",
+        marginBottom:"50px",
         borderRadius:"10px"
     }
 

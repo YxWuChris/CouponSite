@@ -84,6 +84,7 @@ a {
 .articleItem{
   height: 120px;
   display: flex;
+  margin-bottom: 10px;
   background-color:white;
 
 }
@@ -91,6 +92,7 @@ a {
 .articleItem:hover{
   height: 120px;
   display: flex;
+  margin-bottom: 10px;
   background-color:#D0D0D0;
 
 }

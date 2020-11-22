@@ -31,7 +31,9 @@ const ArticleItem = (data) => {
         height: "100px",
         width: "150px",
         marginTop: "auto",
-        marginBottom: "auto"
+        marginBottom: "auto",
+        fontFamily:"ヒラギノ角ゴ Pro W3",
+        fontSize:"0.9rem"
     }
 
     const mainTitle = {
