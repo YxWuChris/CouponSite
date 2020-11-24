@@ -37,7 +37,7 @@ export default function Amazon(props) {
 
         <title>Cocopons.com@アマゾン人気商品の割引きクーポン情報サイト！アメリカでお得にショッピング</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="cocopons.com はアメリカで最新最大の割引き・販促コード・クーポン付きの商品を日本語で紹介するオンラインショッピングウェブサイトです。メイク用品・レディース/メンズ ファッション・キッズ/ベビー用品・アクセサリー・バッグなど多々ご紹介中。" />
+        <meta name="description" content="cocopons.com はアメリカで最新最大の割引き・販促コード・クーポン付きの商品を日本語で紹介するオンラインショッピングウェブサイトです。メイク用品・レディース/メンズ ファッション・キッズ/ベビー用品・アクセサリー・バッグなど多々ご紹介中。Amazon" />
         <meta name="keywords" content="アマゾン,Amazon,ココポンズ,ショッピング,割引クーポン,最新情報,アメリカ,送料無料,人気ブランド,トレンド" />
         <meta name="robots" content="index,follow" class="next-head" />
         <meta name="googlebot" content="index,follow" class="next-head" />

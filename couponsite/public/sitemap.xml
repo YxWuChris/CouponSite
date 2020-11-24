@@ -20,5 +20,26 @@
   <priority>0.8</priority>
 </url>
 
+<url>
+  <loc>https://cocopons.com/Amazon</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-11-24</lastmod>
+  <priority>1</priority>
+</url>
+
+<url>
+  <loc>https://cocopons.com/Beauty</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-11-24</lastmod>
+  <priority>1</priority>
+</url>
+
+<url>
+  <loc>https://cocopons.com/Fashion</loc>
+  <changefreq>daily</changefreq>
+  <lastmod>2020-11-24</lastmod>
+  <priority>1</priority>
+</url>
+
 
 </urlset>
