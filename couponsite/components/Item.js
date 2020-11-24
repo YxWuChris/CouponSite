@@ -172,7 +172,7 @@ const Item = ({ item }) => {
                         <h2><a href={item.link}>{item.title}</a></h2>
                         <h2 style={mobileSubTitle}>{item.subtitle}</h2>
                         <h3>{descriptions[0]}</h3>
-                        <Button style={mobileBuyButton} variant="contained" color="secondary" href={item.link}><b>購入</b></Button>
+                        {/* <Button style={mobileBuyButton} variant="contained" color="secondary" href={item.link}><b>購入</b></Button> */}
                     </div>
                 </div>
             </>}

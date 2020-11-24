@@ -9,7 +9,6 @@ import { articleApi } from '../Data/Api.js'
 
 export default function Amazon(props) {
 
-    console.log(props)
 
     // props.discountItem = props.discountItem.filter(item => {
     //         return item.reference === "Amazon";

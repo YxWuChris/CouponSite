@@ -6,7 +6,6 @@ import ArticleList from "./ArticleList";
 
 const MainBody = ({articleItem,bannerItem,discountItem}) => {
 
-    console.log(articleItem,bannerItem,discountItem)
 
     const container = {
         backgroundColor: "#F5F5F5",
