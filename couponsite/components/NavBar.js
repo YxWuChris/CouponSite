@@ -17,9 +17,11 @@ const NavBar = () => {
 
     const buttonStyle = {
         color:"white",
-        width:"250px",
-        fontSize:"1.4rem",
-        height:"80px"
+        width:"170px",
+        fontSize:"1.1rem",
+        height:"80px",
+        borderRight:"solid 0.5px",
+        borderLeft:"solid 1px"
     }
 
 
@@ -29,12 +31,15 @@ const NavBar = () => {
     return(
         <>
         <div style = {container}>   
-        {/* {isDesktopOrLaptop && <>
-            <Button style = {buttonStyle}>最新情報</Button>
-            <Button style = {buttonStyle}>最新情報</Button>
-            <Button style = {buttonStyle}>最新情報</Button>
-            <Button style = {buttonStyle}>最新情報</Button>
-        </>} */}
+        {isDesktopOrLaptop && <>
+            <Button style = {buttonStyle} href='/'>最新情報</Button>
+            <Button style = {buttonStyle} href='/Beauty'>化粧品スキンケア</Button>
+            <Button style = {buttonStyle} href='/Fashion'>ファッション</Button>
+            <Button style = {buttonStyle} href='/Other'>メンズ</Button>
+            <Button style = {buttonStyle} href='/Amazon'>Amazonアマゾン</Button>
+            <Button style = {buttonStyle}>お役立ちブログ</Button>
+            <Button style = {buttonStyle}>Contact</Button>
+        </>}
         </div>
         </>
     )

@@ -4,7 +4,9 @@ import ProductList from "./ProductList";
 import { useMediaQuery } from 'react-responsive';
 import ArticleList from "./ArticleList";
 
-const MainBody = (infoList) => {
+const MainBody = ({articleItem,bannerItem,discountItem}) => {
+
+    console.log(articleItem,bannerItem,discountItem)
 
     const container = {
         backgroundColor: "#F5F5F5",
@@ -42,11 +44,11 @@ const MainBody = (infoList) => {
         <div style={container}>
             {isDesktopOrLaptop && <>
                 <div style={contentContainer}>
-                    <Banner bannerInfo={infoList.infoList.bannerItem}/>
+                    <Banner bannerInfo={bannerItem}/>
                     <div style={itemBrandStyle}>
-                        <ProductList discountInfo={infoList.infoList.discountItem}/>
+                        <ProductList discountInfo={discountItem}/>
                         <div style={ArticleBrandList}>
-                        <ArticleList articleInfo={infoList.infoList.ArticleItem}/>
+                        <ArticleList articleInfo={articleItem}/>
                         <BrandScroller />
                         </div>
                     </div>
@@ -56,7 +58,7 @@ const MainBody = (infoList) => {
 
                 <div style={mobileContentConatiner}>
                     <div style={itemBrandStyle}>
-                        <ProductList discountInfo={infoList.infoList.discountItem}/>
+                        <ProductList discountInfo={discountItem}/>
                     </div>
                 </div>
 

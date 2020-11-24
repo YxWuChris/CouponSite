@@ -51,7 +51,6 @@ const Shipping1 = () =>{
             <div> </div>
         )
         }
-
         </>
     )
 
