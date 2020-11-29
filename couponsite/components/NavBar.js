@@ -32,7 +32,7 @@ const NavBar = () => {
         <>
         <div style = {container}>   
         {isDesktopOrLaptop && <>
-            <Button style = {buttonStyle} href='/'>最新・人気アイテム</Button>
+            <Button style = {buttonStyle} href='/'>最新人気アイテム</Button>
             <Button style = {buttonStyle} href='/Beauty'>化粧品スキンケア</Button>
             <Button style = {buttonStyle} href='/Fashion'>ファッション</Button>
             <Button style = {buttonStyle} href='/Other'>その他</Button>
