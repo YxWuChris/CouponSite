@@ -92,7 +92,7 @@ const Contact = () => {
             }
         </>
     )
-
+    
     function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
         width: undefined,
@@ -114,12 +114,7 @@ const Contact = () => {
         }
     }, []); 
     return windowSize;
+    }
 }
-
-
-}
-
-
-
 
 export default Contact
