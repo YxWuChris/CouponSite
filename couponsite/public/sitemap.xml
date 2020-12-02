@@ -41,5 +41,26 @@
   <priority>1</priority>
 </url>
 
+<url>
+  <loc>https://cocopons.com/Shipping2</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-01</lastmod>
+  <priority>1</priority>
+</url>
+
+<url>
+  <loc>https://www.cocopons.com/articles/ReportTax</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-01</lastmod>
+  <priority>1</priority>
+</url>
+
+<url>
+  <loc>https://www.cocopons.com/Contact</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-01</lastmod>
+  <priority>1</priority>
+</url>
+
 
 </urlset>
