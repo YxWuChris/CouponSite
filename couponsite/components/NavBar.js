@@ -32,11 +32,11 @@ const NavBar = () => {
         <>
         <div style = {container}>   
         {isDesktopOrLaptop && <>
-            <Button style = {buttonStyle} href='/'>最新情報</Button>
+            <Button style = {buttonStyle} href='/'>最新人気アイテム</Button>
             <Button style = {buttonStyle} href='/Beauty'>化粧品スキンケア</Button>
             <Button style = {buttonStyle} href='/Fashion'>ファッション</Button>
-            <Button style = {buttonStyle} href='/Other'>メンズ</Button>
-            <Button style = {buttonStyle} href='/Amazon'>Amazonアマゾン</Button>
+            <Button style = {buttonStyle} href='/Other'>その他</Button>
+            <Button style = {buttonStyle} href='/Amazon'>Amazon</Button>
             <Button style = {buttonStyle}>お役立ちブログ</Button>
             <Button style = {buttonStyle} href='/Contact'>Contact</Button>
         </>}
