@@ -3,9 +3,13 @@ import BrandScroller from "./BrandScroller";
 import ProductList from "./ProductList";
 import { useMediaQuery } from 'react-responsive';
 import ArticleList from "./ArticleList";
+import { useState, useEffect } from 'react'
+import IconBar from "./IconBar";
 
 const MainBody = ({articleItem,bannerItem,discountItem}) => {
 
+    const mobileWidth = useWindowSize().width
+    const mobileHeight = useWindowSize().height
 
     const container = {
         backgroundColor: "#F5F5F5",
@@ -14,6 +18,16 @@ const MainBody = ({articleItem,bannerItem,discountItem}) => {
         paddingTop: "30px",
         minWidth: "800px"
     }
+
+    const mobileContainer = {
+        Width: mobileWidth
+    }
+
+    // const test = {
+    //     backgroundColor:"red",
+    //     height:mobileHeight,
+    //     width:mobileWidth
+    // }
 
     const contentContainer = {
         width: "1200px",
@@ -40,8 +54,9 @@ const MainBody = ({articleItem,bannerItem,discountItem}) => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
-        <div style={container}>
+        <>
             {isDesktopOrLaptop && <>
+                <div style={container}>
                 <div style={contentContainer}>
                     <Banner bannerInfo={bannerItem}/>
                     <div style={itemBrandStyle}>
@@ -52,18 +67,43 @@ const MainBody = ({articleItem,bannerItem,discountItem}) => {
                         </div>
                     </div>
                 </div>
+                </div>
             </>}
             {isTabletOrMobile && <>
-
+                <div style={mobileContainer}>
+                <IconBar />
                 <div style={mobileContentConatiner}>
+                    </div>
                     <div style={itemBrandStyle}>
                         <ProductList discountInfo={discountItem}/>
                     </div>
                 </div>
-
             </>}
-        </div>
+        </>
     )
+
+function useWindowSize() {
+    const [windowSize, setWindowSize] = useState({
+        width: undefined,
+        height: undefined,
+    });
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }
+    }, []); 
+    return windowSize;
+}
 
 
 }

@@ -38,7 +38,7 @@ const NavBar = () => {
             <Button style = {buttonStyle} href='/Other'>メンズ</Button>
             <Button style = {buttonStyle} href='/Amazon'>Amazonアマゾン</Button>
             <Button style = {buttonStyle}>お役立ちブログ</Button>
-            <Button style = {buttonStyle}>Contact</Button>
+            <Button style = {buttonStyle} href='/Contact'>Contact</Button>
         </>}
         </div>
         </>
