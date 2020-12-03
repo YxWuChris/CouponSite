@@ -64,6 +64,11 @@ const IconBar = () => {
                     </div>
                 </div>
             </>}
+
+            {isDesktopOrLaptop && <>
+                <div></div>
+                </>
+            }
         </>
     )
 
