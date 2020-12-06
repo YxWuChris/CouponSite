@@ -13,6 +13,7 @@ export default function Home(props) {
   return (
     <div>
       <Head>
+        <script data-ad-client="ca-pub-6080883455379256" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JMJPSC1S9B" >
