@@ -64,7 +64,7 @@ const MainBody = ({articleItem,bannerItem,discountItem}) => {
                         <ProductList discountInfo={discountItem}/>
                         <div style={ArticleBrandList}>
                         <ArticleList articleInfo={articleItem}/>
-                        <BlockAdsWidget />
+                        {/* <BlockAdsWidget /> */}
                         <BrandScroller />
                         </div>
                     </div>
