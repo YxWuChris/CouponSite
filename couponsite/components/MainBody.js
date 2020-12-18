@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import ArticleList from "./ArticleList";
 import { useState, useEffect } from 'react'
 import IconBar from "./IconBar";
+import BlockAdsWidget from "./BlockAdsWidget";
 
 const MainBody = ({articleItem,bannerItem,discountItem}) => {
 
@@ -63,6 +64,7 @@ const MainBody = ({articleItem,bannerItem,discountItem}) => {
                         <ProductList discountInfo={discountItem}/>
                         <div style={ArticleBrandList}>
                         <ArticleList articleInfo={articleItem}/>
+                        <BlockAdsWidget />
                         <BrandScroller />
                         </div>
                     </div>
