@@ -1,10 +1,11 @@
 import React from 'react';
 import AdSense from 'react-adsense';
 
-const BlockAdsWidget = () => {
+const MobileAdsWidget = () => {
 
- const BlockAdsStyle = {
-    backgroundColor:"black"
+ const MobileAdsStyle = {
+    backgroundColor:"black",
+    height:"200px"
  }
 
         const installGoogleAds = () => {
@@ -20,16 +21,16 @@ const BlockAdsWidget = () => {
 
 
     return (
-        <div style={BlockAdsStyle}>
-        <AdSense.Google
+        <div style={MobileAdsStyle}>
+        {/* <AdSense.Google
           client='ca-pub-6080883455379256'
-          slot='4524818775'
+          slot='3739039075'
           style={{ display: 'block'}}
           format='auto'
           responsive='true'
-        />
+        /> */}
         </div>
     );
 }
 
-export default BlockAdsWidget
+export default MobileAdsWidget
