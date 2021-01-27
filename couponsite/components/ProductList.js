@@ -2,7 +2,6 @@ import Item from './Item'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { itemApi } from '../Data/Api.js'
-import mockData from '../Data/mockData.json'
 
 
 const ProductList = (discountInfo) => {
