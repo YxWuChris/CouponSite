@@ -10,7 +10,6 @@ const Blog = ({slug, htmlString}) => {
             <Title />
             <NavBar />
             <Article articleData={htmlString} />
-            {/* <div dangerouslySetInnerHTML={{ __html: htmlString }} /> */}
         </div>
     )
 }
