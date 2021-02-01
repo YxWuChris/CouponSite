@@ -2,7 +2,6 @@ import { articleApi } from '../../Data/Api.js'
 import NavBar from '../../components/NavBar'
 import Title from '../../components/Title'
 import Article from '../../components/Article';
-import articleHtml from '../../components/articleHtml'
 
 const Blog = ({slug, htmlString}) => {
     return (
