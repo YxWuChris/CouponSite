@@ -8,15 +8,15 @@ const MobileAdsWidget = () => {
     height:"200px"
  }
 
-        const installGoogleAds = () => {
-          const elem = document.createElement("script");
-          elem.src =
-            "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-          elem.async = true;
-          elem.defer = true;
-          document.body.insertBefore(elem, document.body.firstChild);
-        };
-        installGoogleAds();
+        // const installGoogleAds = () => {
+        //   const elem = document.createElement("script");
+        //   elem.src =
+        //     "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        //   elem.async = true;
+        //   elem.defer = true;
+        //   document.body.insertBefore(elem, document.body.firstChild);
+        // };
+        // installGoogleAds();
 
 
 
